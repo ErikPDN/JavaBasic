@@ -1,4 +1,4 @@
-package fibonacci;
+package challenges;
 
 public class FibonacciPorMemorizacao {
     public static void main(String[] args) {
