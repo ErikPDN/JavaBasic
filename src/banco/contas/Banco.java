@@ -8,10 +8,15 @@ public class Banco {
 
     public Banco() {
         contas = new ArrayList<>();
-        contasPorTitular = new HashSet<>();
+        contasPorTitular = new HashMap<>();
     }
 
     public void adicionarConta(Conta conta) {
+        if (contas.contains(conta)) {
+            System.out.println("Conta com o mesmo titular e número já existe: " + conta.getTitular());
+            return;
+        }
+
         contas.add(conta);
         contasPorTitular.put(conta.getTitular(), conta);
     }

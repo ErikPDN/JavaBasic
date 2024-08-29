@@ -1,0 +1,3 @@
+ContaCorrente,1,Erik,10000.00
+ContaCorrente,2,Maria,20000.00
+ContaCorrente,1,Erik,10000.00

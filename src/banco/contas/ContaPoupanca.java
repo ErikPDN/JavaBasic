@@ -8,6 +8,10 @@ public class ContaPoupanca extends Conta {
         taxaRendimento = taxa;
     }
 
+    public ContaPoupanca(String titular, double saldo, String num) {
+        super(titular, saldo, num);
+    }
+
     public void aplicarRendimento() {
         double rendimento = getSaldo() * taxaRendimento;
         depositar(rendimento);
